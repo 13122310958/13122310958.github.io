@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Eric</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2017 15:03:17 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Oct 2017 00:15:09 +1100</lastBuildDate>
     
 	<atom:link href="https://13122310958.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ionic Input Bug 1 - need to put the input in ion-list&gt;ion-item</title>
+      <link>https://13122310958.github.io/posts/ionic-input-bug-1/</link>
+      <pubDate>Sun, 22 Oct 2017 00:15:09 +1100</pubDate>
+      
+      <guid>https://13122310958.github.io/posts/ionic-input-bug-1/</guid>
+      <description>&amp;lt;ion-grid&amp;gt; &amp;lt;ion-row&amp;gt; &amp;lt;/ion-col&amp;gt; &amp;lt;ion-item&amp;gt; &amp;lt;ion-label color=&amp;quot;black&amp;quot; &amp;gt;test1&amp;lt;/ion-label&amp;gt; &amp;lt;ion-input type=&amp;quot;number&amp;quot; text-right placeholder=&amp;quot;0&amp;quot; name=&amp;quot;a&amp;quot; [(ngModel)]=&amp;quot;data.a&amp;quot; pattern=&amp;quot;\d*&amp;quot;&amp;gt; &amp;lt;/ion-input&amp;gt; &amp;lt;/ion-item&amp;gt; &amp;lt;/ion-item&amp;gt; &amp;lt;/ion-col&amp;gt; &amp;lt;/ion-row&amp;gt; &amp;lt;ion-row&amp;gt; &amp;lt;ion-col&amp;gt; &amp;lt;ion-item&amp;gt; &amp;lt;ion-label color=&amp;quot;black&amp;quot; &amp;gt;can&#39;t go this input in ios&amp;lt;/ion-label&amp;gt; &amp;lt;ion-input type=&amp;quot;number&amp;quot; text-right placeholder=&amp;quot;0&amp;quot; name=&amp;quot;b&amp;quot; [(ngModel)]=&amp;quot;data.b&amp;quot; pattern=&amp;quot;\d*&amp;quot;&amp;gt; &amp;lt;/ion-input&amp;gt; &amp;lt;/ion-item&amp;gt; &amp;lt;/ion-item&amp;gt; &amp;lt;/ion-col&amp;gt; &amp;lt;/ion-row&amp;gt; &amp;lt;/ion-grid&amp;gt;  在这样的结构中， ion-input 无法被点击，跳转到下一个input输入点。除非是键盘按 next 才可以。
+之后改为：
+&amp;lt;ion-list&amp;gt; &amp;lt;ion-item&amp;gt; &amp;lt;ion-label color=&amp;quot;black&amp;quot; &amp;gt;test1&amp;lt;/ion-label&amp;gt; &amp;lt;ion-input type=&amp;quot;number&amp;quot; text-right placeholder=&amp;quot;0&amp;quot; name=&amp;quot;a&amp;quot; [(ngModel)]=&amp;quot;data.a&amp;quot; pattern=&amp;quot;\d*&amp;quot;&amp;gt; &amp;lt;/ion-input&amp;gt; &amp;lt;/ion-item&amp;gt; &amp;lt;/ion-item&amp;gt; &amp;lt;ion-item&amp;gt; &amp;lt;ion-label color=&amp;quot;black&amp;quot; &amp;gt;can&#39;t go this input in ios&amp;lt;/ion-label&amp;gt; &amp;lt;ion-input type=&amp;quot;number&amp;quot; text-right placeholder=&amp;quot;0&amp;quot; name=&amp;quot;b&amp;quot; [(ngModel)]=&amp;quot;data.</description>
+    </item>
     
     <item>
       <title>My First Post</title>
