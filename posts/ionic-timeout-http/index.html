@@ -23,9 +23,7 @@
     
 
     <meta property="og:title" content="Ionic 2 Timeout Http " />
-<meta property="og:description" content="//should add this : import &lsquo;rxjs/add/operator/timeout&rsquo;
-this.http.post(&lsquo;myUrl&rsquo;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&lsquo;timeout exceeded&rsquo;)) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug(&lsquo;ERROR&rsquo;, error), () =&gt; console.log(&lsquo;END&rsquo;) );
-then it can work." />
+<meta property="og:description" content="should add this : import &#39;rxjs/add/operator/timeout&#39;  this.http.post(&#39;myUrl&#39;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&#39;timeout exceeded&#39;)) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug(&#39;ERROR&#39;, error), () =&gt; console.log(&#39;END&#39;) );  then it can work." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://13122310958.github.io/posts/ionic-timeout-http/" />
 
@@ -46,9 +44,7 @@ then it can work." />
 
 
 <meta itemprop="name" content="Ionic 2 Timeout Http ">
-<meta itemprop="description" content="//should add this : import &lsquo;rxjs/add/operator/timeout&rsquo;
-this.http.post(&lsquo;myUrl&rsquo;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&lsquo;timeout exceeded&rsquo;)) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug(&lsquo;ERROR&rsquo;, error), () =&gt; console.log(&lsquo;END&rsquo;) );
-then it can work.">
+<meta itemprop="description" content="should add this : import &#39;rxjs/add/operator/timeout&#39;  this.http.post(&#39;myUrl&#39;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&#39;timeout exceeded&#39;)) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug(&#39;ERROR&#39;, error), () =&gt; console.log(&#39;END&#39;) );  then it can work.">
 
 
 <meta itemprop="datePublished" content="2017-10-22T13:11:17&#43;11:00" />
@@ -59,9 +55,7 @@ then it can work.">
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Ionic 2 Timeout Http "/>
-<meta name="twitter:description" content="//should add this : import &lsquo;rxjs/add/operator/timeout&rsquo;
-this.http.post(&lsquo;myUrl&rsquo;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&lsquo;timeout exceeded&rsquo;)) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug(&lsquo;ERROR&rsquo;, error), () =&gt; console.log(&lsquo;END&rsquo;) );
-then it can work."/>
+<meta name="twitter:description" content="should add this : import &#39;rxjs/add/operator/timeout&#39;  this.http.post(&#39;myUrl&#39;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&#39;timeout exceeded&#39;)) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug(&#39;ERROR&#39;, error), () =&gt; console.log(&#39;END&#39;) );  then it can work."/>
 
   </head>
 
@@ -108,18 +102,23 @@ then it can work."/>
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-        <p>//should add this :
-import &lsquo;rxjs/add/operator/timeout&rsquo;</p>
+        
 
-<p>this.http.post(&lsquo;myUrl&rsquo;,
+<h1 id="should-add-this">should add this :</h1>
+
+<pre><code>import 'rxjs/add/operator/timeout'
+</code></pre>
+
+<pre><code>this.http.post('myUrl', 
         MyData, {headers: Myheaders})
-         .timeout(3000, new Error(&lsquo;timeout exceeded&rsquo;))
+         .timeout(3000, new Error('timeout exceeded'))
          .map(res =&gt; res.json())
          .subscribe(
            data =&gt; this.ret = data,
-           error =&gt; console.debug(&lsquo;ERROR&rsquo;, error),
-           () =&gt; console.log(&lsquo;END&rsquo;)
-         );</p>
+           error =&gt; console.debug('ERROR', error),
+           () =&gt; console.log('END')
+         );
+</code></pre>
 
 <p>then it can work.</p>
 

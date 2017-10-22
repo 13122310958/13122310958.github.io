@@ -17,9 +17,7 @@
       <pubDate>Sun, 22 Oct 2017 13:11:17 +1100</pubDate>
       
       <guid>https://13122310958.github.io/posts/ionic-timeout-http/</guid>
-      <description>//should add this : import &amp;lsquo;rxjs/add/operator/timeout&amp;rsquo;
-this.http.post(&amp;lsquo;myUrl&amp;rsquo;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&amp;lsquo;timeout exceeded&amp;rsquo;)) .map(res =&amp;gt; res.json()) .subscribe( data =&amp;gt; this.ret = data, error =&amp;gt; console.debug(&amp;lsquo;ERROR&amp;rsquo;, error), () =&amp;gt; console.log(&amp;lsquo;END&amp;rsquo;) );
-then it can work.</description>
+      <description>should add this : import &#39;rxjs/add/operator/timeout&#39;  this.http.post(&#39;myUrl&#39;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&#39;timeout exceeded&#39;)) .map(res =&amp;gt; res.json()) .subscribe( data =&amp;gt; this.ret = data, error =&amp;gt; console.debug(&#39;ERROR&#39;, error), () =&amp;gt; console.log(&#39;END&#39;) );  then it can work.</description>
     </item>
     
     <item>

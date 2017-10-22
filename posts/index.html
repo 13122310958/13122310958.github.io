@@ -110,9 +110,7 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      //should add this : import &lsquo;rxjs/add/operator/timeout&rsquo;
-this.http.post(&lsquo;myUrl&rsquo;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&lsquo;timeout exceeded&rsquo;)) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug(&lsquo;ERROR&rsquo;, error), () =&gt; console.log(&lsquo;END&rsquo;) );
-then it can work.
+      should add this : import 'rxjs/add/operator/timeout'  this.http.post('myUrl', MyData, {headers: Myheaders}) .timeout(3000, new Error('timeout exceeded')) .map(res =&gt; res.json()) .subscribe( data =&gt; this.ret = data, error =&gt; console.debug('ERROR', error), () =&gt; console.log('END') );  then it can work.
     </div>
   </div>
 </div>
