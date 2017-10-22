@@ -6,10 +6,21 @@
     <description>Recent content on Eric</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Oct 2017 00:15:09 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 22 Oct 2017 13:11:17 +1100</lastBuildDate>
     
 	<atom:link href="https://13122310958.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ionic 2 Timeout Http </title>
+      <link>https://13122310958.github.io/posts/ionic-timeout-http/</link>
+      <pubDate>Sun, 22 Oct 2017 13:11:17 +1100</pubDate>
+      
+      <guid>https://13122310958.github.io/posts/ionic-timeout-http/</guid>
+      <description>//should add this : import &amp;lsquo;rxjs/add/operator/timeout&amp;rsquo;
+this.http.post(&amp;lsquo;myUrl&amp;rsquo;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&amp;lsquo;timeout exceeded&amp;rsquo;)) .map(res =&amp;gt; res.json()) .subscribe( data =&amp;gt; this.ret = data, error =&amp;gt; console.debug(&amp;lsquo;ERROR&amp;rsquo;, error), () =&amp;gt; console.log(&amp;lsquo;END&amp;rsquo;) );
+then it can work.</description>
+    </item>
     
     <item>
       <title>Ionic Input Bug 1 - need to put the input in ion-list&gt;ion-item</title>
