@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Eric</title>
+    <link>https://13122310958.github.io/categories/development/</link>
+    <description>Recent content in Development on Eric</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Oct 2017 13:11:17 +1100</lastBuildDate>
+    
+	<atom:link href="https://13122310958.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ionic 2 Timeout Http </title>
+      <link>https://13122310958.github.io/posts/ionic-timeout-http/</link>
+      <pubDate>Sun, 22 Oct 2017 13:11:17 +1100</pubDate>
+      
+      <guid>https://13122310958.github.io/posts/ionic-timeout-http/</guid>
+      <description>should add this : import &#39;rxjs/add/operator/timeout&#39;  this.http.post(&#39;myUrl&#39;, MyData, {headers: Myheaders}) .timeout(3000, new Error(&#39;timeout exceeded&#39;)) .map(res =&amp;gt; res.json()) .subscribe( data =&amp;gt; this.ret = data, error =&amp;gt; console.debug(&#39;ERROR&#39;, error), () =&amp;gt; console.log(&#39;END&#39;) );  then it can work.</description>
+    </item>
+    
+  </channel>
+</rss>
